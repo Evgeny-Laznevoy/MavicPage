@@ -83,7 +83,7 @@
 
   &__wrapper {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
 
   &__inner {
@@ -250,11 +250,13 @@
   &__img {
     position: relative;
     margin-right: 32px;
+    min-width: 195px;
+    min-height: 130px;
     &::before {
       content: "";
       position: absolute;
       width: 193px;
-      height: 128px;
+      min-height: 128px;
       border: 2px solid #fff;
       top: -10px;
       right: -15px;
@@ -293,7 +295,7 @@
     position: relative;
     margin-top: 10px;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -307,28 +309,28 @@
     margin-top: 160px;
   }
   &__box-1::before {
-    background-image: url('../images/pointer-1.svg');
+    background-image: url("../images/pointer-1.svg");
     width: 229px;
     height: 114px;
     right: -160px;
     top: 18px;
   }
   &__box-2::before {
-    background-image: url('../images/pointer-2.svg');
+    background-image: url("../images/pointer-2.svg");
     width: 330px;
     height: 81px;
     top: -60px;
     right: -320px;
   }
   &__box-3::before {
-    background-image: url('../images/pointer-3.svg');
+    background-image: url("../images/pointer-3.svg");
     width: 258px;
     height: 103px;
     top: 10px;
     right: 300px;
   }
   &__box-4::before {
-    background-image: url('../images/pointer-4.svg');
+    background-image: url("../images/pointer-4.svg");
     width: 124px;
     height: 89px;
     top: -75px;
@@ -357,7 +359,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     position: relative;
     &:nth-child(3)::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 319px;
       height: 125px;
@@ -370,13 +372,13 @@
     line-height: 28px;
     font-size: 21px;
     @extend %ubuntu-medium;
-    color: rgba(#fff, .8);
+    color: rgba(#fff, 0.8);
     padding: 20px 10px 20px 40px;
     margin-bottom: 4px;
     position: relative;
     cursor: pointer;
     &::after {
-      content: url('../images/arrow-accordion.svg');
+      content: url("../images/arrow-accordion.svg");
       position: absolute;
       width: 72px;
       height: 67px;
@@ -454,14 +456,13 @@
   &__form-input,
   &__form-textarea {
     background: rgba(0, 0, 0, 0.5);
-    // border: none;
     @extend %ubuntu-regular;
     padding: 15px;
     font-size: 13px;
     line-height: 15px;
     color: #fff;
     &::placeholder {
-      color: rgba(#fff, .4);
+      color: rgba(#fff, 0.4);
     }
   }
   &__form-input {
@@ -515,7 +516,7 @@
     text-align: right;
     font-size: 13px;
     line-height: 15px;
-    color: rgba(#fff, .64);
+    color: rgba(#fff, 0.64);
   }
 }
 
